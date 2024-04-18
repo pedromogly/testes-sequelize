@@ -1,0 +1,12 @@
+<h2>Grande Galo de Guerra, formulario</h2>
+<p>Bem vindo ao galo de guerra posts, faça sua postagem de guerra</p>
+<a href="{{goCad}}"><button name="comentar" action="/cad" method="GET">Comentar</button></a>
+<br/>
+<h4>Posts: </h4>
+{{#each posts}}
+    ___________________________________________ _ _ _<br/>
+    <small>Posted in:{{createdAt}}</small>
+    <h3>Titulo: {{titulo}}</h3>
+    <p>Comentário: {{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a><br/>
+{{/each}}
